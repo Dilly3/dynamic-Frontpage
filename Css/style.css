@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+/*********************UTILITY*************************************/
+
+:root {
+   --main-color: #063030;
+   --primary-color: rgb(20, 20, 119);
+   --main-color-deep: rgba(100, 6, 14, 0.856);
+   --light-color: rgba(185, 178, 178, 0.684);
+   --main-color: rgb(214, 19, 35);
+   --background-color: rgb(60, 112, 87);
+   --nav-background: rgb(2, 65, 65);
+   --nav-background-deep: rgb(5, 8, 8);
+}
+
+.btn {
+   clear: both;
+   background-color: var(--nav-background);
+   transition: background-color 1s ease-in;
+   color: var(--light-color);
+   font-size: 1.5rem;
+   padding: 14px 35px;
+   margin: 2px 2px;
+   }
+
+
+.btn:hover {
+   background-color: var(--nav-background-deep);
+}
+
+div.underline {
+   width: 70%;
+   height: 2px;
+   background: var(--main-color-deep);
+   float: right;
+   margin: 3rem 0;
+}
+
+div.underline:nth-of-type(odd) {
+   float: left;
+}
+
+* {
+   padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: red;
+}
+
+img {
+   width: 500px;
+   height: 300px;
+}
+
+body {
+   overflow-x: hidden;
+   height: 30rem;
+}
+
+/*
+Main Nav Styling
+*/
+
+nav.main-nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   text-align: center;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--nav-background);
+}
+
+nav.main-nav .nav-logo {
+   font-size: 3rem;
+}
+
+nav.main-nav ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+nav.main-nav ul li {
+   margin: 5px 5px;
+}
+
+nav.main-nav ul li a {
+   color: var(--light-color);
+   font-size: 2rem;
+   padding: 10px 15px;
+   transition: color 1s ease-in;
+}
+
+.dilli a {
+   padding: 3px 10px;
+}
+
+nav.main-nav i.fa {
+   font-size: 3rem;
+   color: var(--light-color);
+   display: none;
+}
+
+nav.main-nav ul li a:hover {
+   color: rgb(78, 59, 59);
+}
+
+.active {
+   border-bottom: var(--main-color) 2px solid;
+}
+
+.scroll-top {
+   display: block;
+   position: relative;
+   bottom: 20px;
+   right: 1px;
+   z-index: 2;
+   height: max-content;
+   background-color: rgb(128, 128, 128);
+   opacity: 0.9;
+   box-shadow: inset rgb(34, 33, 33) 15px 15px 10px;
+   width: 95px;
+   border-radius: 10%;
+   padding: 10px 0;
+}
+
+.scroll-top__ul li {
+   padding: 3px 0;
+}
+
+.scroll-top__ul li a {
+   color: var(--nav-background-deep);
+   padding: 0 10px;
+}
+
+a.top {
+   display: none;
+}
+
+/*
+header content Styling
+
+*/
+
+.header-content {
+   background: url(../ImgZ/header-img.jpg) no-repeat center center/cover;
+   width: 100%;
+   height: 100vh;
+   padding-top: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-content h2 {
+   color: var(--main-color);
+   font-size: 4rem;
+}
+
+.header-content h2 span {
+   color: var(--nav-background);
+}
+
+/*
+Section Area Styling...
+
+*/
+
+.section-container {
+   padding: 10px 10px;
+   height: max-content;
+}
+
+.section {
+   clear: both;
+   margin-top: 2rem;
+   padding-top: 7rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 900px;
+   width: 100%;
+}
+
+.section article {
+   margin: 5px 5px;
+   width: 670px;
+   overflow: hidden;
+}
+
+.section article h2 {
+   font-size: 2rem;
+   color: var(--light-color);
+   text-overflow: hidden;
+}
+
+.section article p {
+   line-height: 1.5;
+   font-size: 1.5rem;
+   text-align: justify;
+   padding: 20px 10px;
+   margin-bottom: 10px;
+}
+
+.section article p:first-of-type {
+   padding-top: 1.3rem;
+}
+
+.section p:last-of-type {
+   padding-bottom: 2rem;
+}
+
+section figure {
+   width: 550px;
+}
+
+.section figure img {
+   width: 100%;
+}
+
+.section figure figcaption {
+   color: white;
+   font-size: 2rem;
+}
+
+.section article p:not(.first-paragraph) {
+   display: block;
+}
+
+/*
+Footer Styling
+*/
+
+footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 200px;
+   background-color: #333;
+   margin: auto;
+   padding-top: 3rem;
+}
+
+footer .social {
+   margin: 20px 20px;
+}
+
+footer p {
+   color: var(--light-color);
+   font-size: 2rem;
+}
+
+footer .social a {
+   color: var(--light-color);
+   padding: 10px 10px;
+}
+
+.fab,
+.fas {
+   color: var(--light-color);
+   font-size: 3rem;
+   padding: 10px 10px;
+}
